@@ -1,7 +1,7 @@
 if (counter) throw counter.init(), "resetting";
 var counter = {
         docObj: $("<span contenteditable='true' tabindex='-1' style='padding: 6px 8px;border-radius:5px;border:1px solid lightgray; margin: 0px 10px;'>0</span"),
-        projectName: $("#root > div > div.AnnotationPresentation__container--27Z9W > div.AnnotationPresentation__masthead-container--28k_Q > div > div.MastHead__navigation--3R0fi > div:nth-child(2) > p:nth-child(2)").text(),
+        projectName: DOSA,
         skip: !0,
         id: "",
         init: function() {
