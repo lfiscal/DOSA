@@ -1,6 +1,6 @@
 if (counter) throw counter.init(), "resetting";
 var counter = {
-        docObj: $('<span contenteditable='true' tabindex='-1' style='padding: 6px 8px;border-radius:5px;border:1px solid lightgray; margin: 0px 10px;'>0</span'),
+        docObj: $'<span contenteditable="true" tabindex="-1" style="padding: 6px 8px;border-radius:5px;border:1px solid lightgray; margin: 0px 10px;">0</span'),
         projectName: DOSA,
         skip: !0,
         id: "",
