@@ -47,4 +47,3 @@ XMLHttpRequest.prototype.open = function(e, t) {
     if (!t) t = "";
     s_ajaxListener.tempSend.apply(this, arguments), "post" == s_ajaxListener.method.toLowerCase() && (s_ajaxListener.data = e), s_ajaxListener.callback()
 }, hideParseSetting = !1, counter.init();
-createCounter();
