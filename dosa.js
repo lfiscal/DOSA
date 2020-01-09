@@ -14,6 +14,11 @@ var createCounter = function(){
 $('#current').text(currentNum);
 }
 
+$( ".btn-primary" ).click(function() {
+  createCounter();
+});
+
+
 if (counter) throw counter.init(), "resetting";
 var counter = {
         docObj: $("<span contenteditable='true'>0</span"),
@@ -36,7 +41,6 @@ var counter = {
         callback: function() {
           this.url.includes("done") && counter.onload()      
         }
-	    createCounter();
     };
 XMLHttpRequest.prototype.open = function(e, t) {
     if (!e) e = "";
