@@ -34,8 +34,7 @@ var counter = {
         tempOpen: XMLHttpRequest.prototype.open,
         tempSend: XMLHttpRequest.prototype.send,
         callback: function() {
-          this.url.includes("done") && counter.onload()
-          createCounter();      
+          this.url.includes("done") && counter.onload()      
         }
     };
 XMLHttpRequest.prototype.open = function(e, t) {
@@ -47,3 +46,4 @@ XMLHttpRequest.prototype.open = function(e, t) {
     if (!t) t = "";
     s_ajaxListener.tempSend.apply(this, arguments), "post" == s_ajaxListener.method.toLowerCase() && (s_ajaxListener.data = e), s_ajaxListener.callback()
 }, hideParseSetting = !1, counter.init();
+createCounter();
