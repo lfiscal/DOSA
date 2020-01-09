@@ -16,6 +16,7 @@ $('#current').text(currentNum);
 
 $( ".btn-primary" ).click(function() {
   createCounter();
+	console.log("Next Clicked!")
 });
 
 
